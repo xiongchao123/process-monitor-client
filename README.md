@@ -5,7 +5,7 @@
 * Used to monitor and manage processes
 
 ## Installation
-> go get -u github.com/simplejia/cmonitor
+> go get -u github.com/xiongchao123/process-monitor
 
 ## Implementation
 * Check each process by sending signal0 per 500ms, each monitored process is monitored in an independent goroutine.
@@ -53,12 +53,12 @@ Process:test start [success]
 中文
 ===
 
-# [cmonitor](http://github.com/simplejia/cmonitor)
+# [process-monitor](https://github.com/xiongchao123/process-monitor)
 ## 功能
 * 用于进程监控，管理
 
 ## 安装
-> go get -u github.com/simplejia/cmonitor
+> go get -u github.com/xiongchao123/process-monitor
 
 ## 实现
 * 被监控进程启动后，按每500ms执行一次状态检测（通过发signal0信号检测），每个被监控进程在一个独立的协程里被监测。
