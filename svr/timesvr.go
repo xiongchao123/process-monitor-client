@@ -71,7 +71,7 @@ func CheckProcs() {
 					StartProc(config)
 				}
 			}
-			time.Sleep(time.Second * 5)
+			time.Sleep(time.Second * 30)
 		}
 	}
 }

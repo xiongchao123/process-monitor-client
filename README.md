@@ -86,7 +86,7 @@ Process:test start [success]
 
 ## 注意
 * monitor的配置文件解析使用ini，需要先引入ini包 [ini](github.com/ini)
-* 当cmonitor启动时，会根据conf.ini配置启动所有被监控进程，当被监控进程已经启动过，并且符合配置要求时，cmonitor会自动将其加入监控列表
+* 当monitor启动时，会根据conf.ini配置启动所有被监控进程，当被监控进程已经启动过，并且符合配置要求时，monitor会自动将其加入监控列表
 * monitor会定期检查进程运行状态，如果进程异常退出，monitor会反复重试拉起，并且记录日志
 * 当被监控进程为多进程运行模式，monitor只监控管理父进程(子进程应实现检测父进程运行状态，并随父进程退出而退出）
 * 被监控进程以nohup方式启动，所以你的程序就不要自己设定daemon运行了

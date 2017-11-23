@@ -100,7 +100,7 @@ func handle_procs(cmd string, service string) {
 		svr.Procs(cmd, service)
 		// ...
 	} else {
-		xlog.Fatal("Invalid parameters!")
+		xlog.Fatal(xlog.ErrorFile,"Invalid parameters!")
 	}
 }
 
